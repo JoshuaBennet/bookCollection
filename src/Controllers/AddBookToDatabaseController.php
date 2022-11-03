@@ -20,6 +20,6 @@ class AddBookToDb
     public function __invoke(RequestInterface $request, ResponseInterface $response): ResponseInterface
     {
        $this->model->addBookToDB($_POST);
-
+       return $this->model->addBookToDB();
     }
 }

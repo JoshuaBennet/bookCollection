@@ -16,7 +16,7 @@ class BooksModel
     {
         $query = $this->db->prepare('SELECT `id`, `name`, `author`, `price`, `image`, `deleted` FROM `books` ORDER BY `author` DESC');
         $query->execute();
-        return $query->fetchAll();
+        return $books = $query->fetchAll();
     }
 
     public function addBookToDB()
