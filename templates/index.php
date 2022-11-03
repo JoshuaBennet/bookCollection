@@ -1,6 +1,8 @@
 <?php
 use App\Models\BooksModel;
-
+use App\Controllers\IndexController;
+use App\Helpers\DisplayBooks;
+$displayBooks = new DisplayBooks;
 ?>
 
 <!DOCTYPE html>
@@ -12,14 +14,12 @@ use App\Models\BooksModel;
     <title>Book Collection</title>
 </head>
 <body>
-<h1>Books</h1>
-<div>My Books</div>
+<h1>Josh's Library</h1>
+<div>The Bookshelf</div>
     <div>
-        <section class="bookShelf">
+        <section class="bookshelf">
             <?php
-            foreach ($books as $book){
-                echo createBook($book);
-            }
+            echo $displayBooks->createAllBooks($books);
             ?>
         </section>
     </div>
