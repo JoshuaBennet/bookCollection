@@ -7,7 +7,7 @@ use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Slim\Views\PhpRenderer;
 
-class LibraryController
+class IndexController
 {
     private PhpRenderer $renderer;
     private BooksModel $model;
