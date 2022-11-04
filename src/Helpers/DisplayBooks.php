@@ -5,7 +5,6 @@ class DisplayBooks
 {
     public function createAllBooks (array $books): string
     {
-        foreach ($books as $book){
-            return $book;
+       // not sure if this helper would be needed.
         }
 }
