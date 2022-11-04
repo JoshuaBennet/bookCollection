@@ -19,6 +19,8 @@ $displayBooks = new DisplayBooks;
     <div>
         <section class="bookshelf">
             <?php
+
+            // this needs to be looked into, I am sure this needs to be introduced differently 
             echo $displayBooks->createAllBooks($books);
             ?>
         </section>
